@@ -2,7 +2,7 @@
 	/*
 	Description: Plugin for deploying NetInsight analytics page tags
 	Author: Lee Isensee (<a href="http://twitter.com/leeisensee">@leeisensee</a>)
-	Version: 1.0.2
+	Version: 1.0.3
 	Author URI: https://www.leeisensee.com
 	Copyright: 2012 Lee Isensee
 	*/
