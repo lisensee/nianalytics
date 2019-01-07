@@ -1,9 +1,9 @@
 	/*
 	Description: Plugin for deploying NetInsight analytics page tags
 	Author: Lee Isensee (<a href="http://twitter.com/leeisensee">@leeisensee</a>)
-	Version: 1.0.1
+	Version: 1.0.2
 	Author URI: https://www.leeisensee.com
-	Copyright: 2011 Lee Isensee
+	Copyright: 2012 Lee Isensee
 	*/
 
 var host = document.location.host.toString().toLowerCase();
@@ -34,18 +34,21 @@ function autotag()
 			}
 			else
 			{					
-				if(iLink.onclick == "" || iLink.onclick == null)
-					iLink.onclick = function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); nipause(500); };
-				else
+				if(iLink.href.toLowerCase().indexOf("javascript") == -1)
 				{
-					if (window.attachEvent)
-					{
-						iLink.tmpclick = iLink.onclick;
-						iLink.onclick = function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); return this.tmpclick(); nipause(500); };
-					}
+					if(iLink.onclick == "" || iLink.onclick == null)
+						iLink.onclick = function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); nipause(500); };
 					else
-						EV(iLink, "click", function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); nipause(500); });
-				}	
+					{
+						if (window.attachEvent)
+						{
+							iLink.tmpclick = iLink.onclick;
+							iLink.onclick = function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); return this.tmpclick(); nipause(500); };
+						}
+						else
+							EV(iLink, "click", function() { ntptEventTag('ev=externallink&link=' + encodeURIComponent(this.href)); nipause(500); });
+					}	
+				}
 			}
 		}
 		else
