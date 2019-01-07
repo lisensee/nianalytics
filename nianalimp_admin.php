@@ -2,7 +2,7 @@
 	/*
 	Description: Plugin for deploying NetInsight analytics page tags
 	Author: Lee Isensee (<a href="http://twitter.com/leeisensee">@leeisensee</a>)
-	Version: 1.0.0
+	Version: 1.0.1
 	Author URI: https://www.leeisensee.com
 	Copyright: 2011 Lee Isensee
 	*/
@@ -108,4 +108,3 @@ include('nianalimp_vars.php');
 		</p>
 	</form>
 </div>
-
