@@ -32,6 +32,18 @@ function get_pageTitle() {
 	return $pageTitle;
 }
 
+function currentPageURL() {
+$curpageURL = 'http';
+    if ($_SERVER["HTTPS"] == "on") {$curpageURL.= "s";}
+    $curpageURL.= "://";
+    if ($_SERVER["SERVER_PORT"] != "80") {
+    $curpageURL.= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+    } else {
+    $curpageURL.= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+    }
+    return $curpageURL;
+}
+
 	if (is_user_logged_in()){ $ntPGExtra .= '&un='.$username; }
 	$ntPGExtra .= '&pgtitle='. urlencode(get_pageTitle());
 

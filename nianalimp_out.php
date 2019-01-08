@@ -20,7 +20,7 @@ if ($disable == "true") {
 
 	$nojsretval = '';
 	$nojsretval .= '<noscript>';
-	$nojsretval .= '<img src="'. $imgpath .'?ts='. time() . rand() .'&js=0&site='. $siteid .'&lc='. urlencode(getAddress()) . $ntPGExtra .'" height="1" width="1" border="0" hspace="0" vspace="0" alt="" />';
+	$nojsretval .= '<img src="'. $imgpath .'?ts='. time() . rand() .'&js=0&site='. $siteid .'&lc='. urlencode(currentPageURL()) . $ntPGExtra .'" height="1" width="1" border="0" hspace="0" vspace="0" alt="" />';
 	$nojsretval .= '</noscript>';
 
 	echo $nojsretval;

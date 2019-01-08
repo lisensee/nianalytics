@@ -5,10 +5,11 @@
 	Description: Plugin for deploying NetInsight analytics page tags
 	Author: Lee Isensee (Twitter: @leeisensee)
 	Version: 1.0.3
-	Author URI: https://www.leeisensee.com
-
+	Author URI: https://www.leeisensee.com  
+	
 	Copyright: 2012 Lee Isensee
 	*/
+
 define('nianalimp', '1.0.3', true);
 
 function nianalimp_admin() { include('nianalimp_admin.php'); }

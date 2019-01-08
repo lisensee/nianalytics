@@ -6,7 +6,7 @@ Contributors: lisensee
 Tags: netinsight, web analytics, unica  
 Requires at least: 3.0  
 Tested up to: 3.3  
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Simple plugin to include the NetInsight web analytics page tag
 
@@ -24,6 +24,9 @@ As with most 1.0.x releases, this plugin is not heavily tested but I know it wor
 - This plug-in contains the core NetInsight tagging code & has an auto-tag add-on JS file (optional). Any extension customizations that you have created can be appended to the ntpagetag.autotag.js file or by adding an additional include call in the ntpagetag.js.php file (bottom)
 
 # Changelog
+1.0.3
+* restored function that filled the noscript url lc= value
+
 1.0.2
 * modified the auto-tagging script to not fire external link events when an href is a direct javascript call.
 
