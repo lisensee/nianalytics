@@ -1,11 +1,11 @@
 <?php
 	/*
 	Plugin Name: NetInsight Analytics Implementation
-	Plugin URI: http://www.omlee.net/projects/wp-nianalytics/
+	Plugin URI: https://github.com/lisensee/nianalytics
 	Description: Plugin for deploying NetInsight analytics page tags
-	Author: Lee Isensee (Twitter: @OMLee)
+	Author: Lee Isensee (Twitter: @leeisensee)
 	Version: 1.0.3
-	Author URI: http://www.omlee.net
+	Author URI: https://www.leeisensee.com
 
 	Copyright: 2012 Lee Isensee
 	*/
